@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Исх. № 45 от 26.09.2026 — АНО «Добрый дом»</title>
+  <style>
+    @page { size: A4; margin: 0; }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #1a1a1a;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .sheet {
+      width: 210mm;
+      height: 297mm;
+      padding: 16mm 16mm 14mm 22mm;
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .blank {
+      display: grid;
+      grid-template-columns: 1fr 34mm;
+      gap: 4mm;
+      align-items: center;
+      padding-bottom: 3.5mm;
+      border-bottom: 0.35mm solid #1a1a1a;
+    }
+
+    .name {
+      font-family: "Liberation Sans", "Nimbus Sans", Arial, sans-serif;
+      font-weight: 700;
+      font-size: 12pt;
+      line-height: 1.28;
+    }
+
+    .req {
+      font-family: "Liberation Sans", "Nimbus Sans", Arial, sans-serif;
+      font-size: 11pt;
+      line-height: 1.32;
+      margin-top: 0.4mm;
+    }
+
+    .logo {
+      width: 32mm;
+      height: auto;
+      display: block;
+      justify-self: end;
+    }
+
+    .doc-head {
+      display: grid;
+      grid-template-columns: 1fr 84mm;
+      gap: 6mm;
+      margin-top: 8mm;
+      align-items: start;
+    }
+
+    .outgoing, .addressee, .letter, .signblock, h1 {
+      font-family: "Liberation Serif", "Nimbus Roman", "Times New Roman", serif;
+    }
+
+    .outgoing {
+      font-size: 13pt;
+      line-height: 1.4;
+    }
+
+    .outgoing .n {
+      font-size: 14pt;
+    }
+
+    .addressee {
+      font-size: 13pt;
+      line-height: 1.32;
+    }
+
+    h1 {
+      margin: 8mm 0 6mm;
+      text-align: center;
+      font-size: 14pt;
+      font-weight: 700;
+    }
+
+    .letter {
+      font-size: 13pt;
+      line-height: 1.38;
+      text-align: justify;
+    }
+
+    .letter p {
+      margin: 0 0 3.4mm;
+      text-indent: 12mm;
+    }
+
+    .signblock {
+      position: relative;
+      margin-top: 12mm;
+      font-size: 13pt;
+    }
+
+    .role {
+      margin: 0 0 1mm;
+      position: relative;
+      z-index: 4;
+    }
+
+    .signrow {
+      display: flex;
+      align-items: flex-end;
+      gap: 4mm;
+      position: relative;
+      z-index: 2;
+      margin-top: 2mm;
+    }
+
+    .sig {
+      position: relative;
+      width: 62mm;
+      height: 18mm;
+    }
+
+    .sig img {
+      position: absolute;
+      left: 8mm;
+      bottom: 0.6mm;
+      height: 13mm;
+      width: auto;
+      z-index: 2;
+    }
+
+    .sig .line {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-bottom: 0.3mm solid #222;
+    }
+
+    .fio {
+      padding-bottom: 0.4mm;
+      white-space: nowrap;
+    }
+
+    .hint {
+      margin-top: 0.8mm;
+      width: 58mm;
+      text-align: center;
+      font-size: 10pt;
+    }
+
+    .stamp {
+      position: absolute;
+      width: 40mm;
+      height: auto;
+      left: 14mm;
+      top: 11mm;
+      transform: rotate(-8deg);
+      opacity: 0.92;
+      mix-blend-mode: multiply;
+      z-index: 3;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <article class="sheet">
+    <header class="blank">
+      <div>
+        <div class="name">Автономная некоммерческая организация</div>
+        <div class="name">«Центр содержания и защиты животных «Добрый дом»</div>
+        <div class="req">ОГРН 1203100002159&nbsp;&nbsp;ИНН 3123466421</div>
+        <div class="req">Юридический адрес: Белгородская область, Белгородский район,</div>
+        <div class="req">с. Новая Нелидовка, ул. Луговая, 2А Тел. + 7-919-225-80-66,</div>
+        <div class="req">e-mail: kotopes.dom@yandex.ru</div>
+      </div>
+      <img class="logo" src="assets/logo.png" alt="Добрый дом">
+    </header>
+
+    <div class="doc-head">
+      <div class="outgoing">
+        <div class="n">Исх. № 45</div>
+        <div>от 26 сентября 2026 г.</div>
+        <div style="margin-top: 3mm;">На № исх-70/ТО/43/14-6387<br>от 25.09.2026</div>
+      </div>
+      <div class="addressee">
+        Начальнику ФКУ ИК-4<br>
+        УФСИН России по Тамбовской области<br>
+        полковнику внутренней службы<br>
+        П. В. Астафьеву<br>
+        <span style="display:block;margin-top:2mm;">Тамбовская область,<br>Сосновский район, пос. Рабочий</span>
+      </div>
+    </div>
+
+    <h1>О возможности проживания</h1>
+
+    <div class="letter">
+      <p>На Ваш запрос от 25.09.2026 № исх-70/ТО/43/14-6387, направленный в соответствии с пунктом 2 части 2 статьи 17 Федерального закона от 06.02.2023 № 10-ФЗ «О пробации в Российской Федерации», о возможности проживания Костикова Андрея Валерьевича, 1980 года рождения, по адресу: Белгородская область, Белгородский район, с. Новая Нелидовка, ул. Луговая, д. 2, корп. А, сообщаю следующее.</p>
+      <p>Автономная некоммерческая организация «Центр содержания и защиты животных «Добрый дом» является приютом для собак. На территории организации жилые помещения отсутствуют. Расположены только административно-хозяйственные корпуса и вольеры для содержания собак. Указанный адрес для проживания граждан не предназначен.</p>
+      <p>Проживание Костикова Андрея Валерьевича, 1980 года рождения, по адресу: Белгородская область, Белгородский район, с. Новая Нелидовка, ул. Луговая, д. 2, корп. А, невозможно.</p>
+    </div>
+
+    <div class="signblock">
+      <div class="role">Директор АНО «Добрый дом»</div>
+      <div class="signrow">
+        <div class="sig">
+          <img src="assets/signature.png" alt="">
+          <div class="line"></div>
+        </div>
+        <div class="fio">/Коваленко В.А./</div>
+      </div>
+      <div class="hint">(подпись)</div>
+      <img class="stamp" src="assets/stamp.png" alt="">
+    </div>
+  </article>
+</body>
+</html>
